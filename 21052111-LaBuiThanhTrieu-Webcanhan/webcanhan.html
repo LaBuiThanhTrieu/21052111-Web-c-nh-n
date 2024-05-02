@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Cá Nhân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .profile {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .profile img {
+            
+            max-width: 25%;
+            height: auto;
+        }
+        .information {
+            margin-bottom: 30px;
+        }
+        .information h2, .information p {
+            text-align: center;
+        }
+        .question-box {
+            background: #fff;
+            padding: 30px;
+            margin-top: 30px;
+        }
+        .question-box h2 {
+            text-align: center;
+        }
+        .question-box form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .question-box input, .question-box textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .question-box button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="2023_05_29_12_26_IMG_4964.JPG" alt="Ảnh Đại Diện">
+            <h1>LA BÙI THÀNH TRIỆU</h1>
+        </div>
+        <div class="information">
+            <h2>Thông Tin Cá Nhân</h2>
+            <p>Tôi là Triệu, Triệu sinh năm 2003, quê quán ở tỉnh Trà Vinh, Triệu hiện là sinh viên của trường ĐH Công Nghiệp TP.HCM</p>
+            <h2>Sở thích</h2>
+            <p>Triệu cũng giống như những người khác, Triệu thích nghe nhạc, đá banh, đi du lịch,...</p>    
+            <h2>Học Vấn</h2>
+            <p>Hiện mình đang là sinh viên năm 3 trường ĐH Công Nghiệp TP.HCM.</p>
+            <h2>Kinh nghiệm</h2>
+            <p>Hiện mình đang thực tập tại một công ty Acency về lĩnh vực edit video.</p>
+            <h2>Thông tin liên hệ</h2>
+            <p>SDT: 0337963xxx</p>
+            <p>Email: vanlong855tv@gmail.com</p>
+            <p>Địa chỉ: 635/36 QL13, TP Thủ Đức</p>
+        </div>
+        <div class="question-box">
+            <h2>Đặt Câu Hỏi</h2>
+            <form action="submit_question.php" method="post">
+                <input type="text" name="name" placeholder="Tên của bạn" required>
+                <input type="email" name="email" placeholder="Email của bạn" required>
+                <textarea name="question" rows="4" placeholder="Câu hỏi của bạn" required></textarea>
+                <button type="submit">Gửi Câu Hỏi</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
